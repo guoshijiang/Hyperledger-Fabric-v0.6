@@ -784,7 +784,7 @@ f 是最大可容忍的出错节点，也就是说准许错为1/3
 #### 2.图解PBFT执行过程
 
 ![a][a]
-[a]:https://github.com/guoshijiang/Fabric_code_explain_0.6/blob/master/images/qq.jpg "a"
+[a]:https://github.com/guoshijiang/Hyperledger-Fabric-v0.6/blob/master/images/qq.jpg "a"
 
 假设系统要求每次产生区块的时间间隔为𝑡(实际上自己可以配置)，则在一切正常的情况下，算法按照以下流程执行： 
 1.任意节点向全网广播交易数据，并附上发送者的签名 
@@ -851,7 +851,7 @@ Client---->REQUEST--->replicas
 #### 由此观之核心代码执行的过程如下
 
 ![b][b]
-[b]:https://github.com/guoshijiang/Fabric_code_explain_0.6/blob/master/images/ff.png "b"
+[b]:https://github.com/guoshijiang/Hyperledger-Fabric-v0.6/blob/master/images/ff.png "b"
 
 ### 共识算法代码解析
 
@@ -1366,7 +1366,7 @@ util
 	}	
 
 ![d][d]
-[d]:https://github.com/guoshijiang/Fabric_code_explain_0.6/blob/master/images/ee.png "d"
+[d]:https://github.com/guoshijiang/Hyperledger-Fabric-v0.6/blob/master/images/ee.png "d"
 
 ### 配置四个节点共识
 ##### 1、在docker-compose.yml文件中配置好节点
