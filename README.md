@@ -783,8 +783,8 @@ f 是最大可容忍的出错节点，也就是说准许错为1/3
 
 #### 2.图解PBFT执行过程
 
-![a][a]
-[a]:https://github.com/guoshijiang/Hyperledger-Fabric-v0.6/blob/master/images/qq.jpg "a"
+图片1： 
+    ![图片1](https://github.com/guoshijiang/Hyperledger-Fabric-v0.6/blob/master/images/qq.jpg "图片1")
 
 假设系统要求每次产生区块的时间间隔为𝑡(实际上自己可以配置)，则在一切正常的情况下，算法按照以下流程执行： 
 1.任意节点向全网广播交易数据，并附上发送者的签名 
@@ -850,15 +850,16 @@ Client---->REQUEST--->replicas
 
 #### 由此观之核心代码执行的过程如下
 
-![b][b]
-[b]:https://github.com/guoshijiang/Hyperledger-Fabric-v0.6/blob/master/images/ff.png "b"
+图片2： 
+    ![图片2](https://github.com/guoshijiang/Hyperledger-Fabric-v0.6/blob/master/images/ff.png "图片2")
 
 ### 共识算法代码解析
 
 #### 1.代码目录结构
 
-![c][c]
-[c]:http://img.blog.csdn.net/20161221170800572?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvamlhbmdfeGlueGluZw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center "c"
+图片3： 
+    ![图片3](http://img.blog.csdn.net/20161221170800572?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvamlhbmdfeGlueGluZw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center "图片3")
+
 
 它初始化一个consenter和一个helper，并互相把一个句柄赋值给了对方。这样做的目的，就是为了可以让外部调用内部，内部可以调用外部
 
@@ -1365,8 +1366,8 @@ util
 
 	}	
 
-![d][d]
-[d]:https://github.com/guoshijiang/Hyperledger-Fabric-v0.6/blob/master/images/ee.png "d"
+图片5： 
+    ![图片5](https://github.com/guoshijiang/Hyperledger-Fabric-v0.6/blob/master/images/ee.png "图片5")
 
 ### 配置四个节点共识
 ##### 1、在docker-compose.yml文件中配置好节点
